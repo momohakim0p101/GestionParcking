@@ -1,0 +1,19 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="pu" transaction-type="RESOURCE_LOCAL">
+        <class>com.agence.agencevoiture.entity.Utilisateur</class>
+        <class>com.agence.agencevoiture.entity.Client</class>
+        <class>com.agence.agencevoiture.entity.Reservation</class>
+        <class>com.agence.agencevoiture.entity.Facture</class>
+        <class>com.agence.agencevoiture.entity.Avis</class>
+        <class>com.agence.agencevoiture.entity.Voiture</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/Gestion_agence_voiture"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="Fatoufaye0101@"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>

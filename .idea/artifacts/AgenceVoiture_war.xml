@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AgenceVoiture:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>AgenceVoiture</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="AgenceVoiture-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="AgenceVoiture:war exploded" />
+    </root>
+  </artifact>
+</component>
